@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Turkpin Teknik Test
 
-## Getting Started
+Bu repo iş başvuru sürecinde bir ön eleme aracı olarak kullanılmaktadır.
 
-First, run the development server:
+## Görevler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- API'den alınan oyunlar, oyun listesindeki seçim alanında (select) listelenmelidir.
+- Bir oyun seçildiğinde, oyuna ait ürünler API’den alınarak tablo hâlinde gösterilmelidir.
+- Oyun seçilmediğinde ürün listesi gizlenmelidir.
+- Sipariş oluşturma işlevi eklenmelidir.
+  - Tekil veya çoğul sipariş oluşturulabilmelidir.
+  - API'nin gerektirdiği bilgiler toplanmalıdır.
+  - Sipariş sonucu modal/popup aracılığıyla gösterilmelidir.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknolojiler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+- [Next.js](https://nextjs.org/)
+  - Next.js App Router
+  - React Server Components
+  - Next.js Client Components
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [ESLint](https://eslint.org/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Notlar
 
-## Learn More
+- API dokümantasyonuna [dev.turkpin.com](https://dev.turkpin.com) adresinden ulaşabilirsiniz.
+- API’yi kullanabilmeniz için IP adresinizin whitelist’e eklenmesi gerekmektedir. IP adresinizi `integration@turkpin.com` adresine e-posta ile iletmelisiniz.
+- Projede bazı teknik eksiklikler ve iyileştirme alanları bulunabilir. Bunların tespit edilmesi ve doğru şekilde çözülmesi değerlendirmeye olumlu katkı sağlar.
+- Geliştirme sunucusunu başlatmak için `pnpm dev`, lint kontrolünü çalıştırmak için `pnpm lint`, production derlemesi oluşturmak için `pnpm build` komutlarını kullanabilirsiniz.
+- Yapay zekâ kullanımı:
+  - Vibe coding: **YASAK** (birinin responsibility/accountability üstlenmesi gerekir).
+  - AI-assisted coding / pair programming: **İYİ** (elbette faydalanabilirsiniz).
+  - AI slop: **KABUL EDİLEMEZ** (özensiz ve doğrulanmamış yapay zeka çıktıları).
+- Commit kullanımı:
+  - [Turkpin Commit Formatı](git.md)
+  - [Conventional Commits](https://www.conventionalcommits.org/)
+  - [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
 
-To learn more about Next.js, take a look at the following resources:
+Sorularınızı `interview@turkpin.com` adresine iletebilirsiniz.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Değerlendirme
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Değerlendirme sırasında başlıca aşağıdaki konular dikkate alınacaktır:
 
-## Deploy on Vercel
+- Projeye hakimiyet (analiz, kapsam belirleme, yapıyı anlama ve sürdürme)
+- API entegrasyonu
+- Temiz kod yazımı (okunabilir, anlaşılabilir ve sürdürülebilir)
+- Git kullanımı (mesaj formatı, içerik ve bölümleme)
+- Görev analizi (kapsam, bölümleme ve alt görevler)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ek olarak, mülakata çağrılmanız durumunda, görevleri çözdüğünüz çalışma üzerinden birlikte geçilecektir.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Süreç ve Teslim
+
+- Teknik görev, iş başvurusunun ardından görev e-postasının alınmasından itibaren en geç 5 iş günü içinde teslim edilmelidir.
+- Teslim edilen görevler 2–3 iş günü içinde değerlendirilecek ve sonuç bildirilecektir.
+- Teslim için görevlerin tamamen bitirilmiş olması şart değildir. Tamamlanmamış çalışmalar da mevcut hâliyle değerlendirmeye alınacaktır.
